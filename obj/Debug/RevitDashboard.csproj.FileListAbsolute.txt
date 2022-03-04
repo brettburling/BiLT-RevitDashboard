@@ -1,0 +1,18 @@
+D:\bb\programming\RevitDashboard\src\RevitDashboard\obj\Debug\RevitDashboard.Properties.Resources.resources
+D:\bb\programming\RevitDashboard\src\RevitDashboard\obj\Debug\RevitDashboard.csproj.GenerateResource.cache
+D:\bb\programming\RevitDashboard\src\RevitDashboard\obj\Debug\RevitDashboard.csproj.CoreCompileInputs.cache
+D:\Revit Local\RevitDashboard.dll.config
+D:\Revit Local\RevitDashboard.dll
+D:\Revit Local\RevitDashboard.pdb
+D:\bb\programming\RevitDashboard\src\RevitDashboard\obj\Debug\RevitDashboard.dll
+D:\bb\programming\RevitDashboard\src\RevitDashboard\obj\Debug\RevitDashboard.pdb
+c:\Revit Local\RevitDashboard.dll.config
+c:\Revit Local\RevitDashboard.dll
+c:\Revit Local\RevitDashboard.pdb
+D:\bb\programming\RevitDashboard\src\RevitDashboard\obj\Debug\RevitDashboard.csprojAssemblyReference.cache
+D:\bb\programming\BiLT-RevitDashboard\obj\Debug\RevitDashboard.csprojAssemblyReference.cache
+D:\bb\programming\BiLT-RevitDashboard\obj\Debug\RevitDashboard.Properties.Resources.resources
+D:\bb\programming\BiLT-RevitDashboard\obj\Debug\RevitDashboard.csproj.GenerateResource.cache
+D:\bb\programming\BiLT-RevitDashboard\obj\Debug\RevitDashboard.csproj.CoreCompileInputs.cache
+D:\bb\programming\BiLT-RevitDashboard\obj\Debug\RevitDashboard.dll
+D:\bb\programming\BiLT-RevitDashboard\obj\Debug\RevitDashboard.pdb

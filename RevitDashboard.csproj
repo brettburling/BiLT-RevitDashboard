@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7833485F-6156-49AF-B138-1EF8E2859CE5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RevitDashboard</RootNamespace>
+    <AssemblyName>RevitDashboard</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>c:\Revit Local\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RevitAPI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2022\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2022\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationStartup.cs" />
+    <Compile Include="Commands\Links\CmdCadLinkInWorkset.cs" />
+    <Compile Include="Commands\Links\CmdCadLinkLocation.cs" />
+    <Compile Include="Commands\Performance Advisor\CmdComplexSketchCount.cs" />
+    <Compile Include="Commands\Performance Advisor\CmdOveralappingWallCount.cs" />
+    <Compile Include="Commands\Performance Advisor\CmdDuplicateElementCount.cs" />
+    <Compile Include="Commands\Warnings\CmdWriteWarningTypesToFile.cs" />
+    <Compile Include="Commands\Links\CmdRevitLinkCount.cs" />
+    <Compile Include="Commands\Links\CmdCadLinkCount.cs" />
+    <Compile Include="Commands\Model Content\CmdNumberOfGroups.cs" />
+    <Compile Include="Commands\Model Content\CmdNumberOfFamilies.cs" />
+    <Compile Include="Commands\Styles\CmdNumberOfFilledRegionTypes.cs" />
+    <Compile Include="Commands\Styles\CmdNumberOfLineStyles.cs" />
+    <Compile Include="Commands\Styles\CmdNumberOfDimensionTypes.cs" />
+    <Compile Include="Commands\Styles\CmdNumberOfTextTypes.cs" />
+    <Compile Include="Commands\Views\CmdNumberOfViewsNotOnSheets.cs" />
+    <Compile Include="Commands\Sheets\CmdNumberOfSheets.cs" />
+    <Compile Include="Commands\Views\CmdNumberOfViewsByType.cs" />
+    <Compile Include="Commands\Performance Advisor\CmdPurgeableElementCount.cs" />
+    <Compile Include="Commands\File Info\CmdLocalPath.cs" />
+    <Compile Include="Commands\File Info\CmdFileSize.cs" />
+    <Compile Include="Commands\CmdDashboardRefresh.cs" />
+    <Compile Include="Commands\Views\CmdNumberOfViews.cs" />
+    <Compile Include="Commands\Performance Advisor\CmdWritePerformanceRulesToFile.cs" />
+    <Compile Include="Commands\Coordinates\CmdSharedCoordinates.cs" />
+    <Compile Include="Commands\Model Content\CmdInPlaceCount.cs" />
+    <Compile Include="Commands\Warnings\CmdNumberOfWarnings.cs" />
+    <Compile Include="DB\Extensions\RevitLinkTypeExtensions.cs" />
+    <Compile Include="DB\Extensions\CadLinkTypeExtensions.cs" />
+    <Compile Include="DB\Extensions\ViewExtensions.cs" />
+    <Compile Include="DB\Extensions\ElementExtensions.cs" />
+    <Compile Include="DB\Extensions\DocumentExtensions.cs" />
+    <Compile Include="Widgets\CoordinateWidget.cs" />
+    <Compile Include="Widgets\BaseWidget.cs" />
+    <Compile Include="Widgets\LinkTypeCountWidget.cs" />
+    <Compile Include="Widgets\TickWidget.cs" />
+    <Compile Include="Widgets\GuageWidget.cs" />
+    <Compile Include="Widgets\WarningCountWidget.cs" />
+    <Compile Include="Widgets\FileNameWidget.cs" />
+    <Compile Include="Widgets\CountWidget.cs" />
+    <Compile Include="Widgets\ViewTypeCountWidget.cs" />
+    <Compile Include="Widgets\FileSizeWidget.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Utils\Utils.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\DashboardRefresh16.png" />
+    <EmbeddedResource Include="Icons\DashboardRefresh32.png" />
+    <EmbeddedResource Include="Icons\more16.png" />
+    <EmbeddedResource Include="Icons\more32.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
